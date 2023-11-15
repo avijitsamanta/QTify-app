@@ -9,13 +9,13 @@
 }
 
 .hero_content_wrapper{
-    font-weight: bold;
     display: flex;
     align-items: center;
     height: 212px;
 }
 
 .text_div{
+    font-weight: bold;
     height: 212px;
     display: flex;
     flex-direction: column;
