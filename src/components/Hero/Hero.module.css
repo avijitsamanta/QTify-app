@@ -1,7 +1,7 @@
 .hero{
     width: 100vw;
     height: 270px;
-    /* background-color: var(--color-black); */
+     background-color: var(--color-black); 
     padding: 0px 74px;
     display: flex;
     align-items: center;
