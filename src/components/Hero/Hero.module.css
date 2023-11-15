@@ -1,0 +1,24 @@
+.hero{
+    width: 100vw;
+    height: 270px;
+    /* background-color: var(--color-black); */
+    padding: 0px 74px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero_content_wrapper{
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    height: 212px;
+}
+
+.text_div{
+    height: 212px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
