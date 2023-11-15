@@ -1,7 +1,7 @@
 .hero{
     width: 100vw;
     height: 270px;
-    /* background-color: var(--color-black); */
+    background-color: var(--color-black);
     padding: 0px 74px;
     display: flex;
     align-items: center;
@@ -10,12 +10,14 @@
 
 .hero_content_wrapper{
     display: flex;
+    background-color: var(--color-black);
     align-items: center;
     height: 212px;
 }
 
 .text_div{
     font-weight: bold;
+    background-color: var(--color-black);
     height: 212px;
     display: flex;
     flex-direction: column;
