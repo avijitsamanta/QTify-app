@@ -1,5 +1,6 @@
 .hero{
     width: 100vw;
+    font-weight: bold;
     height: 270px;
     background-color: var(--color-black);
     padding: 0px 74px;
