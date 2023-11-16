@@ -5,7 +5,7 @@ import HeadphoneImage from '../../assets/vibrating-headphone.png'
 function Hero() {
   return (
     <div className={styles.hero}>
-        <p>100 Thousand Songs,ad-free</p>
+        <p>100 Thousand Songs,ad-free.</p>
         <p>Over thousands podcast episodes</p>
         <img src={HeadphoneImage} alt='headphone' width={212} height={212}/>
     </div>
