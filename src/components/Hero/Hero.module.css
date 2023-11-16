@@ -1,6 +1,7 @@
 .hero{
     width: 100vw;
     font-weight: bold;
+    font-size: 24px;
     height: 270px;
     background-color: var(--color-black);
     padding: 0px 74px;
@@ -17,7 +18,7 @@
 }
 
 .text_div{
-    font-weight: bold;
+    /* font-weight: bold; */
     background-color: var(--color-black);
     height: 212px;
     display: flex;
