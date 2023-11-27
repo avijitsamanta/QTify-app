@@ -1,16 +1,37 @@
-import logo from './logo.svg';
 import './App.css';
-import Button from './components/Button';
-import SearchBar from './components/SearchBar';
 import Navbar from './components/Navbar/Navbar';
-import Hero from './components/Hero/Hero';
+import { StyledEngineProvider } from '@mui/material';
+import { Outlet } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { fetchNewAlbum, fetchTopAlbum } from './api/api';
+
 
 function App() {
+  const [data,setData] = useState({})
+  const generateData = (key,source) =>{
+    source().then((data)=>{
+      setData((prevState)=>{
+        return{
+          ...prevState,
+          [key]:data
+        }
+      })
+    })
+  }
+  useEffect(()=>{
+    generateData("topAlbums",fetchTopAlbum)
+    generateData("newAlbums",fetchNewAlbum)
+  },[])
+  const {topAlbums = [],newAlbums=[]} = data
+ 
   return (
-    <div className="App">
+    <>
+      <StyledEngineProvider injectFirst>
       <Navbar/>
-      <Hero/>
-    </div>
+      <Outlet context={{data:{topAlbums,newAlbums}}}/>
+      </StyledEngineProvider>
+      
+    </>
   );
 }
 

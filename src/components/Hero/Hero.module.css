@@ -4,6 +4,19 @@
     font-size: 24px;
     height: 270px;
     background-color: var(--color-black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+}
+
+.hero1{
+    width: 100vw;
+    font-weight: bold;
+    font-size: 24px;
+    height: 270px;
+    background-color: var(--color-black);
     padding: 0px 74px;
     display: flex;
     align-items: center;
