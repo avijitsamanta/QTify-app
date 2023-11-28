@@ -28,8 +28,8 @@ function Carousel({data,renderComponent}) {
            <CarouselLeftNavigation />
            <CarouselRightNavigation />
            {
-            data.map((ele)=>(
-                <SwiperSlide>
+            data.map((ele,idx)=>(
+                <SwiperSlide key={idx}>
                     {renderComponent(ele)}
                 </SwiperSlide>
             ))
